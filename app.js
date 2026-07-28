@@ -27,7 +27,7 @@ function fmt(sec) {
 
 async function loadTracks() {
   try {
-    const res = await fetch('tracks.json');
+    const res = await fetch('tracks.json', { cache: 'no-store' });
     const data = await res.json();
     tracks = data.tracks || [];
   } catch {
