@@ -1,0 +1,100 @@
+{
+  "tracks": [
+    {
+      "id": "4d110ac0a588",
+      "title": "Antes do galo cantar",
+      "artist": "FRAD",
+      "file": "audios/b227b0d6-01-frad-antes-do-galo-cantar.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.427Z"
+    },
+    {
+      "id": "0541967e3ca8",
+      "title": "Foi enchendo a cara",
+      "artist": "FRAD",
+      "file": "audios/b74d2e76-02-frad-foi-enchendo-a-cara.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.498Z"
+    },
+    {
+      "id": "7892522c1b6f",
+      "title": "O meu RNR",
+      "artist": "FRAD",
+      "file": "audios/73cf9a91-03-frad-o-meu-rnr.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.593Z"
+    },
+    {
+      "id": "336d01b256cb",
+      "title": "Pressa do nome dela",
+      "artist": "FRAD",
+      "file": "audios/b72b0441-04-frad-pressa-do-nome-dela.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.675Z"
+    },
+    {
+      "id": "f60f5a2e2aa9",
+      "title": "Terceira garrafa",
+      "artist": "FRAD",
+      "file": "audios/bcd0151b-05-frad-terceira-garrafa.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.731Z"
+    },
+    {
+      "id": "ab4b1e36140b",
+      "title": "Carerrado",
+      "artist": "FRAD",
+      "file": "audios/7fd51080-06-frad-carerrado.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.769Z"
+    },
+    {
+      "id": "a8e187527df9",
+      "title": "Voltei a bohemia",
+      "artist": "FRAD",
+      "file": "audios/872799e9-07-frad-voltei-a-bohemia.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.879Z"
+    },
+    {
+      "id": "1587af357684",
+      "title": "De longe parece tão perto",
+      "artist": "FRAD",
+      "file": "audios/073c80da-08-frad-de-longe-parece-ta-o-perto.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:08.958Z"
+    },
+    {
+      "id": "625ecd759018",
+      "title": "Coxas lindas do interior",
+      "artist": "FRAD",
+      "file": "audios/9a9f1501-09-frad-coxas-lindas-do-interior.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:09.048Z"
+    },
+    {
+      "id": "34b352ad4a30",
+      "title": "Mais doido que um barril de vinho",
+      "artist": "FRAD",
+      "file": "audios/ab321ebe-10-frad-mais-doido-que-um-barril-de-vinho.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:09.156Z"
+    },
+    {
+      "id": "0a66ebc21617",
+      "title": "Não sabia o meu nome",
+      "artist": "FRAD",
+      "file": "audios/8f471003-11-frad-na-o-sabia-o-meu-nome.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:09.272Z"
+    },
+    {
+      "id": "51023aa9fcea",
+      "title": "Terça e nada!",
+      "artist": "FRAD",
+      "file": "audios/d5c133f3-12-frad-tera-a-e-nada-.mp3",
+      "cover": null,
+      "addedAt": "2026-07-28T02:46:09.367Z"
+    }
+  ]
+}
