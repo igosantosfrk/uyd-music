@@ -27,7 +27,7 @@ function fmt(sec) {
 
 async function loadTracks() {
   try {
-    const res = await fetch('tracks.json?v=3', { cache: 'no-store' });
+    const res = await fetch('tracks.json?v=2', { cache: 'no-store' });
     const data = await res.json();
     tracks = data.tracks || [];
   } catch {
@@ -45,8 +45,6 @@ function renderTracks() {
   }
   emptyState.style.display = 'none';
   trackCount.textContent = `${tracks.length} ${tracks.length === 1 ? 'faixa' : 'faixas'}`;
-  const heroMeta = document.getElementById('heroMeta');
-  if (heroMeta) heroMeta.textContent = `Álbum · ${tracks.length} faixas`;
 
   tracks.forEach((track, i) => {
     const el = document.createElement('div');
@@ -95,7 +93,6 @@ function playTrack(i) {
   playerTitle.textContent = track.title;
   playerArtist.textContent = track.artist;
   playerCover.innerHTML = track.cover ? `<img src="${track.cover}" alt="" />` : '♪';
-  playerCover.classList.toggle('vinyl', Boolean(track.cover));
   updatePlayingUI();
 }
 
@@ -124,15 +121,6 @@ function updatePlayingUI() {
     }
   });
   btnPlay.textContent = audio.paused ? '▶' : '⏸';
-  playerCover.classList.toggle('spinning', !audio.paused);
-}
-
-const btnHeroPlay = document.getElementById('btnHeroPlay');
-if (btnHeroPlay) {
-  btnHeroPlay.addEventListener('click', () => {
-    if (currentIndex === -1) playTrack(0);
-    else togglePlay();
-  });
 }
 
 btnPlay.addEventListener('click', togglePlay);

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <header class="topbar">
@@ -28,18 +28,10 @@
   <main>
     <section class="hero">
       <div class="hero-glow"></div>
-      <div class="album-feature">
-        <div class="album-cover-wrap">
-          <img src="covers/frad-capa.jpg" alt="Capa do disco FRAD" class="album-cover" />
-        </div>
-        <div class="album-info">
-          <span class="album-tag">◉ Disco em destaque</span>
-          <h1>FRAD</h1>
-          <p class="album-meta" id="heroMeta">Álbum · 12 faixas</p>
-          <p class="hero-sub">O disco da banda FRAD na UYD Music, do jeito que tem que ser: no volume máximo.</p>
-          <button id="btnHeroPlay" class="btn-play-hero">▶&nbsp;&nbsp;Ouvir o disco</button>
-        </div>
-      </div>
+      <img src="logo.png" alt="UYD Music" class="hero-logo" />
+      <h1>Sua música. <span class="accent">Seu som.</span></h1>
+      <p class="hero-sub">A plataforma de streaming da UYD Music.<br />Aperte o play e sinta.</p>
+      <a href="#musicas" class="btn-play-hero">▶&nbsp;&nbsp;Ouvir agora</a>
     </section>
 
     <section id="musicas" class="tracks-section">
@@ -91,6 +83,6 @@
   </div>
 
   <audio id="audio" preload="metadata"></audio>
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>

@@ -105,57 +105,19 @@ body {
   pointer-events: none;
 }
 
-.album-feature {
+.hero-logo {
+  width: 220px;
+  max-width: 60vw;
+  margin-bottom: 28px;
+  border-radius: 24px;
   position: relative;
-  max-width: 860px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 52px;
-  text-align: left;
 }
 
-.album-cover-wrap {
-  flex-shrink: 0;
-}
-
-.album-cover {
-  width: 300px;
-  max-width: 72vw;
-  border-radius: 18px;
-  display: block;
-  box-shadow: 0 24px 70px rgba(200, 80, 58, 0.45), 0 8px 28px rgba(0, 0, 0, 0.6);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.album-cover-wrap:hover .album-cover {
-  transform: scale(1.03) rotate(-1deg);
-  box-shadow: 0 30px 90px rgba(200, 80, 58, 0.6), 0 10px 34px rgba(0, 0, 0, 0.65);
-}
-
-.album-tag {
-  display: inline-block;
-  color: var(--coral-light);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-
-.album-info h1 {
-  font-size: clamp(2.6rem, 7vw, 4.4rem);
+.hero h1 {
+  font-size: clamp(2rem, 5.5vw, 3.4rem);
   font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.album-meta {
-  color: var(--text-dim);
-  font-size: 0.92rem;
-  font-weight: 600;
-  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+  margin-bottom: 14px;
 }
 
 .accent {
@@ -177,9 +139,6 @@ body {
   background: linear-gradient(120deg, var(--coral), var(--coral-soft));
   color: #fff;
   text-decoration: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 15px 42px;
@@ -241,10 +200,7 @@ body {
 .track:hover {
   background: var(--surface-hover);
   border-color: rgba(217, 138, 112, 0.25);
-  transform: translateX(4px);
 }
-
-.track { transition: background 0.2s, border-color 0.2s, transform 0.2s; }
 
 .track.playing {
   background: linear-gradient(90deg, rgba(200, 80, 58, 0.16), var(--bg-2) 60%);
@@ -461,9 +417,8 @@ body {
 }
 
 .player-cover {
-  position: relative;
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: 10px;
   background: var(--surface);
   display: flex;
@@ -473,38 +428,9 @@ body {
   font-size: 1.2rem;
   flex-shrink: 0;
   overflow: hidden;
-  transition: border-radius 0.4s ease;
 }
 
 .player-cover img { width: 100%; height: 100%; object-fit: cover; }
-
-/* modo vinil: capa redonda girando com furo central */
-.player-cover.vinyl {
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.55);
-  animation: vinyl-spin 3.5s linear infinite;
-  animation-play-state: paused;
-}
-
-.player-cover.vinyl.spinning { animation-play-state: running; }
-
-.player-cover.vinyl::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid rgba(255, 255, 255, 0.35);
-}
-
-@keyframes vinyl-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .player-meta { min-width: 0; }
 
@@ -587,28 +513,7 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-/* entrada suave do hero */
-.album-feature > * {
-  animation: fade-up 0.7s ease both;
-}
-
-.album-info { animation-delay: 0.15s; }
-
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* ---------- Mobile ---------- */
-@media (max-width: 720px) {
-  .album-feature {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-  .album-cover { width: 240px; }
-}
-
 @media (max-width: 640px) {
   .topnav { display: none; }
   .player-right { display: none; }
